@@ -1,0 +1,364 @@
+==4851== Memcheck, a memory error detector
+==4851== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4851== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4851== Command: ./vec.out
+==4851== Parent PID: 4786
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A984: TestAddWorkNormal (GvectorTest.c:554)
+==4851==    by 0x10983D: main (GvectorTest.c:60)
+==4851==  Address 0x4a50720 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A984: TestAddWorkNormal (GvectorTest.c:554)
+==4851==    by 0x10983D: main (GvectorTest.c:60)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A913: TestAddWorkNormal (GvectorTest.c:541)
+==4851==    by 0x10983D: main (GvectorTest.c:60)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10AAEA: TestAddInputNULL (GvectorTest.c:597)
+==4851==    by 0x109851: main (GvectorTest.c:62)
+==4851==  Address 0x4a50860 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10AAEA: TestAddInputNULL (GvectorTest.c:597)
+==4851==    by 0x109851: main (GvectorTest.c:62)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10AAA1: TestAddInputNULL (GvectorTest.c:586)
+==4851==    by 0x109851: main (GvectorTest.c:62)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10AA4B: TestAddBlockSize0 (GvectorTest.c:577)
+==4851==    by 0x10985B: main (GvectorTest.c:63)
+==4851==  Address 0x4a50920 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10AA4B: TestAddBlockSize0 (GvectorTest.c:577)
+==4851==    by 0x10985B: main (GvectorTest.c:63)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A9DA: TestAddBlockSize0 (GvectorTest.c:564)
+==4851==    by 0x10985B: main (GvectorTest.c:63)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A877: TestDestroy (GvectorTest.c:528)
+==4851==    by 0x109865: main (GvectorTest.c:65)
+==4851==  Address 0x4a509e0 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A877: TestDestroy (GvectorTest.c:528)
+==4851==    by 0x109865: main (GvectorTest.c:65)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A829: TestDestroy (GvectorTest.c:523)
+==4851==    by 0x109865: main (GvectorTest.c:65)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A7B6: TestDoubleDestroy (GvectorTest.c:510)
+==4851==    by 0x10986F: main (GvectorTest.c:66)
+==4851==  Address 0x4a50ab0 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A7B6: TestDoubleDestroy (GvectorTest.c:510)
+==4851==    by 0x10986F: main (GvectorTest.c:66)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A768: TestDoubleDestroy (GvectorTest.c:505)
+==4851==    by 0x10986F: main (GvectorTest.c:66)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A706: TestDestroyWithAllocation (GvectorTest.c:491)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851==  Address 0x4a50c20 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A706: TestDestroyWithAllocation (GvectorTest.c:491)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A6C9: TestDestroyWithAllocation (GvectorTest.c:487)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851== 
+==4851== Conditional jump or move depends on uninitialised value(s)
+==4851==    at 0x1094A5: VectorRemove (Gvector.c:116)
+==4851==    by 0x10A5EA: TestRemoveNormal (GvectorTest.c:455)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851== 
+==4851== Use of uninitialised value of size 8
+==4851==    at 0x109536: VectorRemove (Gvector.c:130)
+==4851==    by 0x10A5EA: TestRemoveNormal (GvectorTest.c:455)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851== 
+==4851== Invalid write of size 8
+==4851==    at 0x109536: VectorRemove (Gvector.c:130)
+==4851==    by 0x10A5EA: TestRemoveNormal (GvectorTest.c:455)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851==  Address 0x4a50bd0 is 0 bytes inside a block of size 8 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10A656: DestroyPersons (GvectorTest.c:471)
+==4851==    by 0x10931C: VectorDestroy (Gvector.c:57)
+==4851==    by 0x10A706: TestDestroyWithAllocation (GvectorTest.c:491)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10A6A1: TestDestroyWithAllocation (GvectorTest.c:483)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851== 
+==4851== Use of uninitialised value of size 8
+==4851==    at 0x10A5EF: TestRemoveNormal (GvectorTest.c:457)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x10A5EF: TestRemoveNormal (GvectorTest.c:457)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851==  Address 0x4a50bd0 is 0 bytes inside a block of size 8 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10A656: DestroyPersons (GvectorTest.c:471)
+==4851==    by 0x10931C: VectorDestroy (Gvector.c:57)
+==4851==    by 0x10A706: TestDestroyWithAllocation (GvectorTest.c:491)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10A6A1: TestDestroyWithAllocation (GvectorTest.c:483)
+==4851==    by 0x109879: main (GvectorTest.c:67)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A623: TestRemoveNormal (GvectorTest.c:465)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851==  Address 0x4a50d20 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A623: TestRemoveNormal (GvectorTest.c:465)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A59A: TestRemoveNormal (GvectorTest.c:450)
+==4851==    by 0x109883: main (GvectorTest.c:69)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A4C3: TestRemoveValueNULL (GvectorTest.c:418)
+==4851==    by 0x109897: main (GvectorTest.c:71)
+==4851==  Address 0x4a50f20 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A4C3: TestRemoveValueNULL (GvectorTest.c:418)
+==4851==    by 0x109897: main (GvectorTest.c:71)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A47A: TestRemoveValueNULL (GvectorTest.c:406)
+==4851==    by 0x109897: main (GvectorTest.c:71)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A431: TestGetNormal (GvectorTest.c:395)
+==4851==    by 0x1098A1: main (GvectorTest.c:73)
+==4851==  Address 0x4a50fe0 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A431: TestGetNormal (GvectorTest.c:395)
+==4851==    by 0x1098A1: main (GvectorTest.c:73)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A3A9: TestGetNormal (GvectorTest.c:379)
+==4851==    by 0x1098A1: main (GvectorTest.c:73)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A2F4: TestGetWrongIndex1 (GvectorTest.c:353)
+==4851==    by 0x1098B5: main (GvectorTest.c:75)
+==4851==  Address 0x4a511e0 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A2F4: TestGetWrongIndex1 (GvectorTest.c:353)
+==4851==    by 0x1098B5: main (GvectorTest.c:75)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A272: TestGetWrongIndex1 (GvectorTest.c:341)
+==4851==    by 0x1098B5: main (GvectorTest.c:75)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A21C: TestGetWrongIndex2 (GvectorTest.c:330)
+==4851==    by 0x1098BF: main (GvectorTest.c:76)
+==4851==  Address 0x4a51320 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A21C: TestGetWrongIndex2 (GvectorTest.c:330)
+==4851==    by 0x1098BF: main (GvectorTest.c:76)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A198: TestGetWrongIndex2 (GvectorTest.c:317)
+==4851==    by 0x1098BF: main (GvectorTest.c:76)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A142: TestGetWrongIndex3 (GvectorTest.c:307)
+==4851==    by 0x1098C9: main (GvectorTest.c:77)
+==4851==  Address 0x4a51460 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A142: TestGetWrongIndex3 (GvectorTest.c:307)
+==4851==    by 0x1098C9: main (GvectorTest.c:77)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A0F9: TestGetWrongIndex3 (GvectorTest.c:297)
+==4851==    by 0x1098C9: main (GvectorTest.c:77)
+==4851== 
+==4851== Use of uninitialised value of size 8
+==4851==    at 0x109641: VectorGet (Gvector.c:163)
+==4851==    by 0x10A06A: TestSetNormal (GvectorTest.c:278)
+==4851==    by 0x1098D3: main (GvectorTest.c:79)
+==4851== 
+==4851== Use of uninitialised value of size 8
+==4851==    at 0x10A06F: TestSetNormal (GvectorTest.c:279)
+==4851==    by 0x1098D3: main (GvectorTest.c:79)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x10A0A3: TestSetNormal (GvectorTest.c:286)
+==4851==    by 0x1098D3: main (GvectorTest.c:79)
+==4851==  Address 0x4a51520 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x10A0A3: TestSetNormal (GvectorTest.c:286)
+==4851==    by 0x1098D3: main (GvectorTest.c:79)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x10A003: TestSetNormal (GvectorTest.c:271)
+==4851==    by 0x1098D3: main (GvectorTest.c:79)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109FA6: Testprint (GvectorTest.c:259)
+==4851==    by 0x1098DD: main (GvectorTest.c:80)
+==4851==  Address 0x4a51660 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109FA6: Testprint (GvectorTest.c:259)
+==4851==    by 0x1098DD: main (GvectorTest.c:80)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x109F23: Testprint (GvectorTest.c:251)
+==4851==    by 0x1098DD: main (GvectorTest.c:80)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109BCB: TestPrintStruct (GvectorTest.c:158)
+==4851==    by 0x1098E7: main (GvectorTest.c:81)
+==4851==  Address 0x4a51810 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109BCB: TestPrintStruct (GvectorTest.c:158)
+==4851==    by 0x1098E7: main (GvectorTest.c:81)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x109B5D: TestPrintStruct (GvectorTest.c:151)
+==4851==    by 0x1098E7: main (GvectorTest.c:81)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109A80: TestPrintString (GvectorTest.c:125)
+==4851==    by 0x1098F1: main (GvectorTest.c:82)
+==4851==  Address 0x4a51910 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109A80: TestPrintString (GvectorTest.c:125)
+==4851==    by 0x1098F1: main (GvectorTest.c:82)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x1099DA: TestPrintString (GvectorTest.c:115)
+==4851==    by 0x1098F1: main (GvectorTest.c:82)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109E80: TestVectorSizeNormal (GvectorTest.c:235)
+==4851==    by 0x1098FB: main (GvectorTest.c:85)
+==4851==  Address 0x4a51a10 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109E80: TestVectorSizeNormal (GvectorTest.c:235)
+==4851==    by 0x1098FB: main (GvectorTest.c:85)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x109E06: TestVectorSizeNormal (GvectorTest.c:223)
+==4851==    by 0x1098FB: main (GvectorTest.c:85)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109DB0: TestVectorSizeNULL (GvectorTest.c:215)
+==4851==    by 0x109905: main (GvectorTest.c:86)
+==4851==  Address 0x4a51b50 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109DB0: TestVectorSizeNULL (GvectorTest.c:215)
+==4851==    by 0x109905: main (GvectorTest.c:86)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x109D72: TestVectorSizeNULL (GvectorTest.c:206)
+==4851==    by 0x109905: main (GvectorTest.c:86)
+==4851== 
+==4851== Invalid read of size 8
+==4851==    at 0x109349: VectorDestroy (Gvector.c:61)
+==4851==    by 0x109D1C: TestCapacityNormal (GvectorTest.c:198)
+==4851==    by 0x10990F: main (GvectorTest.c:88)
+==4851==  Address 0x4a51c10 is 0 bytes inside a block of size 40 free'd
+==4851==    at 0x483CA3F: free (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x109341: VectorDestroy (Gvector.c:60)
+==4851==    by 0x109D1C: TestCapacityNormal (GvectorTest.c:198)
+==4851==    by 0x10990F: main (GvectorTest.c:88)
+==4851==  Block was alloc'd at
+==4851==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==4851==    by 0x10923E: VectorCreate (Gvector.c:27)
+==4851==    by 0x109CA2: TestCapacityNormal (GvectorTest.c:182)
+==4851==    by 0x10990F: main (GvectorTest.c:88)
+==4851== 
+==4851== Conditional jump or move depends on uninitialised value(s)
+==4851==    at 0x1092E9: VectorDestroy (Gvector.c:50)
+==4851==    by 0x109C4C: TestCapacityNULL (GvectorTest.c:174)
+==4851==    by 0x109919: main (GvectorTest.c:89)
+==4851== 
+==4851== 
+==4851== HEAP SUMMARY:
+==4851==     in use at exit: 408 bytes in 11 blocks
+==4851==   total heap usage: 61 allocs, 50 frees, 3,240 bytes allocated
+==4851== 
+==4851== LEAK SUMMARY:
+==4851==    definitely lost: 232 bytes in 8 blocks
+==4851==    indirectly lost: 176 bytes in 3 blocks
+==4851==      possibly lost: 0 bytes in 0 blocks
+==4851==    still reachable: 0 bytes in 0 blocks
+==4851==         suppressed: 0 bytes in 0 blocks
+==4851== Rerun with --leak-check=full to see details of leaked memory
+==4851== 
+==4851== Use --track-origins=yes to see where uninitialised values come from
+==4851== For lists of detected and suppressed errors, rerun with: -s
+==4851== ERROR SUMMARY: 27 errors from 27 contexts (suppressed: 0 from 0)
